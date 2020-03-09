@@ -2,10 +2,12 @@
 <html>
     <head>
         <link href="portfoliocheck.css" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     </head>
     <body>
 <header>
-<div class="menu-toggler">
+<div id="hamburger" class="menu-toggler">
     <div class="bar half start"> </div>
     <div class="bar"> </div>
     <div class="bar half end"> </div>
@@ -16,9 +18,6 @@
 </li>
 <li>
         <a href="#about" class="nav-link">about</a>
-    </li>
-    <li>
-        <a href="#services" class="nav-link">services</a>
     </li>
     <li>
         <a href="#portfolio" class="nav-link">portfolio</a>
@@ -38,7 +37,7 @@
 <section class="about" id="about">
     <div class="container">
         <div class="profile-img" data-aos="fade-right" data-aos-delay="300">
-            <img src="pictures/planet.jpg" alt="">
+            <img src="/planet.jpeg" alt="">
         </div>
         <div class="about-details" data-aos="fade-left" data-aos-delay="600">
             <div class="about-heading">
@@ -150,7 +149,7 @@
             </div>
             <div class="portfolio-item">
                 <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="300">
-                    <img src="pictures/armstrong.png" alt="">
+                    <img src="pictures/enemy_30.png" alt="">
                 </div>
                 <div class="portfolio-description" data-aos="fade-left" data-aos-delay="600">
                     <h6>Web Development</h6>
@@ -230,10 +229,7 @@
                             <form action="" data-aos="fade-up" data-aos-delay="300">
                                 <label for="name">Name:</label>
                                 <input type="text" id="name" name="name" placeholder="Enter your name..." required>
-                                <label for="email">Email:</label>
-                                <input type="email" id="email" name="email" placeholder="Enter your email..." required>
-                                <label for="service">Services:</label>
-                                <select name="services" id="service">
+                                <script src="portfoliocheck.js"></script>             <select name="services" id="service">
                                     <option value="">Web Design</option>
                                     <option value="">Web Development</option>
                                     <option value="">Web Design/Development</option>
@@ -251,6 +247,10 @@
                         <p>&copy; 2020 portfolio.com</p>
                     </footer>
 
-<script src="portfoliocheck.js"></script>
     </body>
+    <script src="portfoliocheck.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </html>
